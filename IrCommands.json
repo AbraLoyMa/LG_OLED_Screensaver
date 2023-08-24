@@ -1,0 +1,280 @@
+{
+  "productName": "LG OLED C1",
+  "size": 48,
+  "units": "inches",
+  "address": "0x04",
+  "protocol": "NEC",
+  "commandsTested": [
+    {
+      "id": "channel_up",
+      "code": "0x00",
+      "description": "Swithces to higher number channel",
+      "currentAssignment": null
+    },
+    {
+      "id": "channel_down",
+      "code": "0x01",
+      "description": "Swithces to lower number channel",
+      "currentAssignment": null
+    },
+    {
+      "id": "volume_up",
+      "code": "0x02",
+      "description": "Increases the  volume",
+      "currentAssignment": null
+    },
+    {
+      "id": "volume_down",
+      "code": "0x03",
+      "description": "Decreases the  volume",
+      "currentAssignment": null
+    },
+    {
+      "id": "power",
+      "code": "0x08",
+      "description": "Turns the power off",
+      "currentAssignment": null
+    },
+    {
+      "id": "mute",
+      "code": "0x09",
+      "description": "Removes all sound",
+      "currentAssignment": null
+    },
+    {
+      "id": "input",
+      "code": "0x0B",
+      "description": "Toggles between inputs available",
+      "currentAssignment": null
+    },
+    {
+      "id": "timer",
+      "code": "0x0E",
+      "description": "Toggles between sleep times options",
+      "currentAssignment": null
+    },
+    {
+      "id": "info",
+      "code": "0x0F",
+      "description": "Displays the basic info of the current program",
+      "currentAssignment": null
+    },
+    {
+      "id": "ai_picture_pro",
+      "code": "0x11",
+      "description": "Enables store mode and displays AI picture enchancement",
+      "currentAssignment": null
+    },
+    {
+      "id": "ai_sound_pro",
+      "code": "0x12",
+      "description": "Enables store mode and adjusts AI sound enchancement",
+      "currentAssignment": null
+    },
+    {
+      "id": "channel_previous",
+      "code": "0x1A",
+      "description": "Swithces to previous channel",
+      "currentAssignment": null
+    },
+    {
+      "id": "channel_favorite",
+      "code": "0x1E",
+      "description": "Swithces to favorite channel",
+      "currentAssignment": null
+    },
+    {
+      "id": "channel_manager",
+      "code": "0x2D",
+      "description": "Opens the channels administrator window",
+      "currentAssignment": null
+    },
+    {
+      "id": "disney_plus",
+      "code": "0x31",
+      "description": "Opens Disney+ app",
+      "currentAssignment": null
+    },
+    {
+      "id": null,
+      "code": "0x33",
+      "description": "Displays an LG welcome message",
+      "currentAssignment": null
+    },
+    {
+      "id": "cc",
+      "code": "0x38",
+      "description": "Toggles closed captions",
+      "currentAssignment": null
+    },
+    {
+      "id": "dashboard",
+      "code": "0x3E",
+      "description": "Opens LG dashboard (for IoT & inputs)",
+      "currentAssignment": null
+    },
+    {
+      "id": "down",
+      "code": "0x41",
+      "description": "Navigates down",
+      "currentAssignment": null
+    },
+    {
+      "id": "home",
+      "code": "0x42",
+      "description": "Opens the apps & recomendations menu",
+      "currentAssignment": null
+    },
+    {
+      "id": "settings",
+      "code": "0x43",
+      "description": "Opens TV quick settings (longer press for full settings)",
+      "currentAssignment": null
+    },
+    {
+      "id": "demo",
+      "code": "0x44",
+      "description": "Enables store mode and opens demo menu",
+      "currentAssignment": null
+    },
+    {
+      "id": "channel_list",
+      "code": "0x4C",
+      "description": "Opens the channels list window",
+      "currentAssignment": null
+    },
+    {
+      "id": "picture",
+      "code": "0x4D",
+      "description": "Toggles picture mode options",
+      "currentAssignment": null
+    },
+    {
+      "id": "netflix",
+      "code": "0x56",
+      "description": "Opens Netflix app",
+      "currentAssignment": null
+    },
+    {
+      "id": "prime",
+      "code": "0x5C",
+      "description": "Opens Prime Video app",
+      "currentAssignment": null
+    },
+    {
+      "id": "lg_channels",
+      "code": "0x71",
+      "description": "Opens LG's internet channels menu",
+      "currentAssignment": null
+    },
+    {
+      "id": "remote_setup",
+      "code": "0x75",
+      "description": "Starts pairing of LG's magic remote",
+      "currentAssignment": null
+    },
+    {
+      "id": "ratio",
+      "code": "0x79",
+      "description": "Toggles aspect ratio options",
+      "currentAssignment": null
+    },
+    {
+      "id": "simplink",
+      "code": "0x7E",
+      "description": "Togles HDMI CEC feature",
+      "currentAssignment": null
+    },
+    {
+      "id": "movies",
+      "code": "0x81",
+      "description": "Displays movies recomendations",
+      "currentAssignment": "Launch App: com.hbo.hbomax"
+    },
+    {
+      "id": "channel_recording",
+      "code": "0x90",
+      "description": "Opens channels recordings manager",
+      "currentAssignment": null
+    },
+    {
+      "id": "energy_saver",
+      "code": "0x95",
+      "description": "Toggles picture brightness options",
+      "currentAssignment": "Execute: luna-send -n 1 'luna://com.webos.service.tvpower/power/turnOffScreen' '{}'"
+    },
+    {
+      "id": "channel_guide",
+      "code": "0xA9",
+      "description": "Opens channels programing schedule window",
+      "currentAssignment": null
+    },
+    {
+      "id": "soccer",
+      "code": "0xBB",
+      "description": "Toggles soccer picture",
+      "currentAssignment": null
+    },
+    {
+      "id": "hdmi_1",
+      "code": "0xCE",
+      "description": "Switches input to HDMI 1",
+      "currentAssignment": null
+    },
+    {
+      "id": "hdmi_2",
+      "code": "0xCC",
+      "description": "Switches input to HDMI 2",
+      "currentAssignment": null
+    },
+    {
+      "id": "hdmi_3",
+      "code": "0xE9",
+      "description": "Switches input to HDMI 3",
+      "currentAssignment": null
+    },
+    {
+      "id": "hdmi_4",
+      "code": "0xDA",
+      "description": "Switches input to HDMI 4",
+      "currentAssignment": null
+    },
+    {
+      "id": "menu",
+      "code": "0xEA",
+      "description": "Displays small round navigation menu",
+      "currentAssignment": null
+    },
+    {
+      "id": "picture_stats",
+      "code": "0xFC",
+      "description": "Displays small display statistics",
+      "currentAssignment": null
+    },
+    {
+      "id": "sound_stats",
+      "code": "0xFD",
+      "description": "Displays small sound drivers configuraiton",
+      "currentAssignment": null
+    },
+    {
+      "id": "power_only",
+      "code": "0xFE",
+      "description": null,
+      "currentAssignment": null
+    },
+    {
+      "id": "ez_menu",
+      "code": "0xFF",
+      "description": "Displays hidden advanced service config menu",
+      "currentAssignment": null
+    }
+  ],
+  "extras": [
+    {
+      "param": "total_power_on_time_before_reset",
+      "value": 4261,
+      "units": "hours"
+    }
+  ]
+}

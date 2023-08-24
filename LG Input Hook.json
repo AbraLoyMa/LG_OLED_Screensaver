@@ -1,0 +1,24 @@
+{
+  "keyBinds": [
+    {
+      "id": 897,
+      "action": "excecute",
+      "command": "luna-send -n 1 'luna://com.webos.service.tvpower/power/turnOffScreen' '{}'"
+    },
+    {
+      "id": 1083,
+      "action": "launchApp",
+      "app": "HBO Max (com.hbo.hbomax)"
+    },
+    {
+      "id": 1086,
+      "action": "launchApp",
+      "app": "Crunchyroll (com.crunchyroll.webos)"
+    },
+    {
+      "id": 1117,
+      "action": "launchApp",
+      "app": "YouTube AdFree (youtube.leanback.v4)"
+    }
+  ]
+}
