@@ -33,9 +33,9 @@ By default, bluetooth is enabled and can be calibrated on the fly with the [HLKR
 
 Once a living being comes within range of the radar it will show up first on the motion graph, once it stops moving these measurements should transition to the static graph, while the first graph should go near 0% and only reversed once the subject moves again.
 
-<div style="text-align: center;">
-    <img src="images/calibration_app.gif" width="40%" align="center"/>
-</div>
+<p align="center">
+    <img src="images/calibration_app.gif" width="40%"/>
+</p>
 
 Greater detail must be taken when calibrating the static graph, since it is a precision sensor the minimum probability will vary depending on the individual's breathing pattern, that is, if for some reason the individual holds breathing for a couple of seconds the probability of the graph will drop drastically along with it. To compensate for this, the sensor delay can be adjusted as the `Unmanned duration(s)` parameter.
 
@@ -50,9 +50,9 @@ delay(18700);                       //Wait for the WebOS system to start (about 
 
 When rooting, only one control button needs to be sacrificed to function as a trigger to toggle the display. In the included code the energy saving button is selected as it is no longer part of the magic remote included, therefor cannot be triggered by accident under normal circunstances. Other buttons can be used instead if necessary (also stored in the main code).
 
-<div style="text-align: center;">
-    <img src="images/magic_remote.png" width="40%" align="center"/>
-</div>
+<p align="center">
+    <img src="images/magic_remote.png" width="40%"/>
+</p>
 
 Once the TV gets the desired button code within the app, the option to assign it to a code execution is available. The command required to turn off the display is as follows:
 
