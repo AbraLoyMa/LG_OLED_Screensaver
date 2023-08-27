@@ -8,11 +8,17 @@
 
 #define IR_SEND_PIN 0
 #define RADAR_RECIVE_PIN 2
+#define BT_ENABLE_PIN 1
 #define TV_ADDRESS 0x4
+#define SERIAL_RX_PIN 3
+#define SERIAL_TX_PIN 4
 
 #include "TvControl.h"
+#include "RadarControl.h"
 #include <IRremote.hpp>
+#include <SoftwareSerial.h>
 
+SoftwareSerial tinnySerial(SERIAL_RX_PIN, SERIAL_TX_PIN);
 IRsend transmiter;
 
 bool slepping = false;
@@ -21,7 +27,13 @@ const unsigned long delays = 290000;  //Shutdown time when not in use (radar 10"
 
 void setup() {
   pinMode(RADAR_RECIVE_PIN, INPUT);
-  delay(20000);                       //Wait for the WebOS system to start (about 20" seconds)
+  pinMode(BT_ENABLE_PIN, INPUT);
+  
+  tinnySerial.begin(9600);
+  radarSetup(BT_ENABLE_PIN);
+  tinnySerial.end();
+
+  delay(18700);                       //Wait for the WebOS system to start (about 20")
 }
 
 void loop() {
@@ -38,4 +50,25 @@ void loop() {
   }
 
   delay(200);
+}
+
+void radarSetup(int pin) {
+  delay(1000);
+  //Enable config mode
+  sendCommand(Mode::SETUP, 14);
+  //Setup bluetooth
+  sendCommand(digitalRead(pin) ? Bluetooth::ENABLE : Bluetooth::DISABLE, 14);
+  //Restart radar to take effect
+  sendCommand(Mode::RESTART, 12);
+}
+
+void sendCommand(int config, const int len) {
+  byte buffer[len];
+  memcpy_P(buffer, command[config], sizeof(buffer));
+
+  for (int i = 0; i < sizeof(buffer); i++) {
+    tinnySerial.write(buffer[i]);
+  }
+
+  delay(100);
 }

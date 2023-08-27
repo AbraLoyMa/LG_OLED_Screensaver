@@ -1,7 +1,5 @@
 {
   "productName": "LG OLED C1",
-  "size": 48,
-  "units": "inches",
   "address": "0x04",
   "protocol": "NEC",
   "commandsTested": [
@@ -268,13 +266,6 @@
       "code": "0xFF",
       "description": "Displays hidden advanced service config menu",
       "currentAssignment": null
-    }
-  ],
-  "extras": [
-    {
-      "param": "total_power_on_time_before_reset",
-      "value": 4261,
-      "units": "hours"
     }
   ]
 }
